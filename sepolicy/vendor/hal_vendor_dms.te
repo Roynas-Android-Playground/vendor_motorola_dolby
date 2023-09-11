@@ -1,0 +1,5 @@
+binder_call(hal_vendor_dms_client, hal_vendor_dms_server)
+binder_call(hal_vendor_dms_server, hal_vendor_dms_client)
+
+add_hwservice(hal_vendor_dms_server, hal_vendor_dms_hwservice)
+allow hal_vendor_dms_client hal_vendor_dms_hwservice:hwservice_manager find;

@@ -1,0 +1,3 @@
+attribute hal_vendor_dms;
+attribute hal_vendor_dms_client;
+attribute hal_vendor_dms_server;
