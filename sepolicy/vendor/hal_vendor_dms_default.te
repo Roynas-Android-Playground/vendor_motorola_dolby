@@ -5,4 +5,6 @@ type vendor_dms_data_file, file_type, data_file_type;
 hal_server_domain(hal_vendor_dms_default, hal_vendor_dms)
 init_daemon_domain(hal_vendor_dms_default)
 
-rw_dir_file(hal_vendor_dms_default, vendor_dms_data_file)
+allow hal_vendor_dms_default vendor_dms_data_file:dir rw_dir_perms;
+allow hal_vendor_dms_default vendor_dms_data_file:file rw_file_perms;
+allow hal_vendor_dms_default vendor_dms_data_file:file create_file_perms;
